@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <div id="header">
+        <div id="clock-container">
+            <p id="clock"></p>
+        </div>
+    </div>
+    <div id="login-container">
+        <form id="login-form">
+            <input autofocus required type="text" placeholder="이름을 입력하세요.">
+            <!-- <button>로그인</button> -->
+        </form>
+    </div>
+    <div id="after-login-container">
+        <div id="greeting-container">
+            <form id="greeting-form" class="hidden">
+                <span id="greeting"></span><br>
+                <button>로그아웃</button>
+            </form>
+        </div>
+        <div id="todo">
+            <div id="create-todo">
+                <form id="todo-form">
+                    <input autofocus required type="text" placeholder="오늘 할 일을 입력하세요!">
+                    <!-- <button>+</button> -->
+                </form>
+            </div>
+            <div id="manage-todo">
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div id="quote-container">
+        <div id="quote">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+    </div>
+    <div id="weather-container">
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
