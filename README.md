@@ -5,3 +5,5 @@
 - JavaScript
 - HTML
 - CSS
+
+## 작업시 고려했던 점
