@@ -50,7 +50,14 @@
         </div>
     </div>
     <div id="weather-container">
-        <div id="weather">
+        <form id="weather-key-form">
+            <label for="weather-key">날씨 (선택): 본인 OpenWeatherMap 키</label>
+            <input id="weather-key" type="password" required minlength="32" maxlength="32" pattern="[a-fA-F0-9]{32}" autocomplete="off" aria-describedby="weather-key-note">
+            <button type="submit">날씨 켜기</button>
+            <button id="weather-disable" type="button">날씨 끄기</button>
+            <small id="weather-key-note">키는 현재 페이지 메모리에만 보관하고 위치와 함께 OpenWeatherMap으로 전송합니다. 새로고침하면 지워집니다.</small>
+        </form>
+        <div id="weather" aria-live="polite">
             <span></span>
             <span></span>
         </div>
